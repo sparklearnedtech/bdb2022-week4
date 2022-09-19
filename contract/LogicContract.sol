@@ -1,5 +1,7 @@
 pragma solidity 0.4.24;
 
+// Author: Rico Domino Collina, 09/19/22
+
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -17,4 +19,14 @@ contract EternalStorage {
 
 contract LogicContract is EternalStorage {
     
+    // Read function: Get data from stringStorage with index keccak256(abi.encodePacked("testVariable"))
+    function getTestVariable() public view returns (string) {
+        return stringStorage[keccak256(abi.encodePacked("testVariable"))];
+    }
+
+    // Set function: Set data for stringStorage with index keccak256(abi.encodePacked("testVariable"))
+    function setTestVariable(string _testVariable) public {
+        stringStorage[keccak256(abi.encodePacked("testVariable"))] = _testVariable;
+    }
 }
+
