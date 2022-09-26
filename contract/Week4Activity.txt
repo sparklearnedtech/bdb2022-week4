@@ -1,0 +1,7 @@
+Week 4 Activity
+
+external storage
+0x60246d3858630F4021a2573E2cfE4e5bca4eCb14
+
+logic contract
+0x5004863AD247efb97D528737Fba1b9b73Adca7da
