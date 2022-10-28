@@ -1,3 +1,4 @@
+// Author: Jayson Feguis, 10/28/22
 pragma solidity 0.4.24;
 
 
