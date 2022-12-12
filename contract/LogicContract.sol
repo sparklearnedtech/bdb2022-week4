@@ -17,13 +17,4 @@ contract EternalStorage {
 
 contract LogicContract is EternalStorage {
     
-    // Read function: Get data from stringStorage with index keccak256(abi.encodePacked("testVariable"))
-    function getTestVariable() public view returns (string) {
-        return stringStorage[keccak256(abi.encodePacked("testVariable"))];
-    }
-
-    // Set function: Set data for stringStorage with index keccak256(abi.encodePacked("testVariable"))
-    function setTestVariable(string _testVariable) public {
-        stringStorage[keccak256(abi.encodePacked("testVariable"))] = _testVariable;
-    }
 }
